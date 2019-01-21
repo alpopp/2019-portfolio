@@ -192,6 +192,10 @@ footer {
 
 .singlePortfolioInner {
   padding: 65px 25px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   overflow: hidden;
   align-items: center; }
@@ -203,6 +207,10 @@ footer {
   text-decoration: none; }
 
 .flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center; }
 
@@ -247,6 +255,10 @@ p.tags {
   margin-top: 0; }
 
 .portfolioContainer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   align-items: center; }
 
