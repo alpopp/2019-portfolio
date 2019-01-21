@@ -1,19 +1,22 @@
 <nav>
 
-    <div class="row">
-        <div class="navLeft"><a href="/">Alex Popp</a></div>
-        <div class="navRight">
-            <div class="menuItems">
-                <a href="#">Work</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
-            <div id="hamburger" class="menu-wrapper" onclick="navClick()">
-                <div class="hamburger-menu"></div>	  
-            </div>
-                  
-                  
-        </div>
-    </div>
+            <div class="row">
+                    <div class="navLeft"><a href="{{site.baseurl}}/">Alex Popp</a></div>
+                    <div class="navRight">
+                        <div class="menuItems">
+                            <a {% if page.url == "/work" %}class="current"{% endif %} href="{{site.baseurl}}/work">Work</a>
+                            <a {% if page.url == "/about" %}class="current"{% endif %} href="{{site.baseurl}}/about">About</a>
+                            <a href="#">Contact</a>
+                        </div>
+                        <div id="hamburger" class="menu-wrapper" onclick="navClick()">
+                            <div class="hamburger-menu"></div>	  
+                        </div>
+                              
+                              
+                    </div>
+                </div>
+
+    
 
 </nav>
+

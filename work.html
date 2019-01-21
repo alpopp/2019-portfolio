@@ -1,0 +1,36 @@
+---
+permalink: /work
+layout: default
+title: Work
+---
+
+<div class="container sectionPadding">
+
+    <div class="flex portfolio">
+
+    {% assign pages = site.pages | where: "type", "Project" %}
+
+    {% for page in pages %}
+
+        <div class="singlePortfolio" style="background:#{{page.color}};">
+            <a href="{{site.baseurl}}{{page.url}}">
+                <div class="singlePortfolioInner">
+                    <div class="portfolioLeft">
+                        <h3>{{page.title}}</h3>
+                        <p class="tags">{{page.tagz}}</p>
+                        {% if page.dev == true %}
+                            <p class="alert">STILL IN DEV</p>
+                        {% endif %}
+                    </div>
+                    <div class="portfolioRight">
+                        <img src="{{site.baseurl}}/assets/{{page.img}}">
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+
+    {% endfor %}
+
+    </div>
+</div>
