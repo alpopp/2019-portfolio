@@ -51,6 +51,13 @@ a.current{
     display: -webkit-flex;
     display: flex;
 
+
+}
+.contactImg{
+    max-width: 300px;
+    border-radius: 1000px;
+    margin: 0px auto;
+    display: block;
 }
 .navLeft{
     width: 30%;
@@ -161,6 +168,7 @@ footer{
     background-color: $green;
     text-align: center;
     background-image: url('../images/map.png');
+    background-position: center;
     a{
         font-size: 25px;
         color:white;
@@ -238,6 +246,12 @@ footer{
 .flex.portfolio{
 	flex-wrap: wrap;
 }
+.portfolioLeft {
+    width: 40%;
+}
+.portfolioRight {
+    width: 60%;
+}
 .singlePortfolioInner{
 	padding: 65px 25px;
 
@@ -291,6 +305,16 @@ p.alert {
 	font-family: "source-code-pro";
 	color: #fff;
 }
+.portfolioFlex{
+    align-items: flex-start;
+    .portfolioContent--left{
+        width: 60%;
+        margin-right: 35px;
+    }
+    .portfolioContent--right{
+        width: 40%;
+    }
+}
 p.tags{
 	font-family: "source-code-pro";
     font-size: 16px;
@@ -324,7 +348,7 @@ p.tags{
 // end portfolio
 
 
-a.button:hover {
+.button:hover {
     transition: all .3s;
     transform: scale(1.05, 1.05);
     background-image: linear-gradient(to left, $green , $blue);
@@ -338,9 +362,35 @@ nav .row {
     flex-direction: row;
 }
 
+// form
+form{
+    display: flex;
+    flex-direction: column;
+}
+.formBasic {
+    margin-bottom: 20px;
+
+    padding: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: futura-pt, sans-serif;
+    background-color: #fff;
+
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+form .button{
+    display: inline-block;
+    font-family: futura-pt, sans-serif;
+}
+// end form
 
 
 @media all and (max-width: 800px) {
+    .portfolioLeft, .portfolioRight {
+        width: 100%;
+    }
     .left, .right{
         margin: 0;
     }
@@ -420,5 +470,10 @@ nav .row {
 	}
     .portfolioContainer{
         flex-direction: column;
+    }
+    .portfolioFlex{
+        .portfolioContent--left, .portfolioContent--right{
+            width: 100%;
+        }
     }
 }
