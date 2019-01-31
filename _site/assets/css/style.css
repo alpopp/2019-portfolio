@@ -2,6 +2,16 @@ body {
   font-family: futura-pt, sans-serif;
   margin: 0; }
 
+a {
+  color: #207669;
+  text-decoration: none;
+  font-weight: 600; }
+  a:hover {
+    text-decoration: underline; }
+
+nav a:hover, a.button:hover, a.buttonWhite:hover {
+  text-decoration: none; }
+
 h1 {
   font-size: 35px; }
 
@@ -145,7 +155,28 @@ footer {
   margin: 20px 0 0; }
   .social img {
     margin: 0px 5px;
-    max-width: 45px; }
+    max-width: 22px;
+    position: relative;
+    top: 3px; }
+  .social a {
+    padding: 6px;
+    border-radius: 100px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px; }
+    .social a:hover {
+      transition: all .3s;
+      transform: scale(1.05, 1.05); }
+
+.twitter {
+  background: #1DA1F2; }
+
+.dribbble {
+  background: #E94D88; }
+
+.linkedIn {
+  background: #0077B5; }
 
 .introSplash {
   background-image: url("../images/alpopp-background-splash.jpg");
@@ -320,7 +351,8 @@ form {
 
 form .button {
   display: inline-block;
-  font-family: futura-pt, sans-serif; }
+  font-family: futura-pt, sans-serif;
+  cursor: pointer; }
 
 @media all and (max-width: 800px) {
   .portfolioLeft, .portfolioRight {
