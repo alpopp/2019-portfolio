@@ -31,6 +31,15 @@ p {
   font-family: futura-pt, sans-serif;
   line-height: 35px; }
 
+p.copy {
+  margin-bottom: 0;
+  color: white;
+  font-weight: 400;
+  font-family: "source-code-pro";
+  font-size: 14px;
+  line-height: 25px;
+  margin-top: 5px; }
+
 img {
   width: 100%; }
 
@@ -63,6 +72,8 @@ a.current {
 .navLeft {
   width: 30%;
   background: #207669; }
+  .navLeft a:hover {
+    text-decoration: underline; }
 
 .navRight {
   width: 70%;
@@ -142,32 +153,29 @@ nav .navLeft a {
   padding-bottom: 50px; }
 
 footer {
+  padding: 0 20px;
   background-color: #207669;
-  text-align: center;
   background-image: url("../images/map.png");
   background-position: center; }
   footer a {
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     text-decoration: none; }
 
-.social {
-  margin: 20px 0 0; }
-  .social img {
-    margin: 0px 5px;
-    max-width: 22px;
-    position: relative;
-    top: 3px; }
-  .social a {
-    padding: 6px;
-    border-radius: 100px;
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    margin: 0 5px; }
-    .social a:hover {
-      transition: all .3s;
-      transform: scale(1.05, 1.05); }
+.social img {
+  max-width: 22px;
+  position: relative; }
+.social a {
+  padding: 6px;
+  text-align: center;
+  border-radius: 100px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0 5px; }
+  .social a:hover {
+    transition: all .3s;
+    transform: scale(1.05, 1.05); }
 
 .twitter {
   background: #1DA1F2; }
@@ -175,11 +183,14 @@ footer {
 .dribbble {
   background: #E94D88; }
 
-.linkedIn {
-  background: #0077B5; }
+.linkedin {
+  background: #0c8fd4; }
+
+.codepen {
+  background: #2c303b; }
 
 .introSplash {
-  background-image: url("../images/alpopp-background-splash.jpg");
+  background-image: url("../images/alex-popp-ux-background.jpg");
   background-size: cover;
   padding: 250px 0; }
   .introSplash .text {
@@ -191,9 +202,7 @@ footer {
       margin: 0;
       font-weight: 600; }
     .introSplash .text p {
-      margin: 10px 0 30px;
-      font-size: 20px;
-      line-height: 30px; }
+      margin: 10px 0 30px; }
 
 .button {
   background-image: linear-gradient(to right, #207669, #1E3B91);
@@ -293,13 +302,17 @@ p.alert {
   .portfolioFlex .portfolioContent--right {
     width: 40%; }
 
+.pageIntro h1 {
+  margin-top: 0; }
+
 p.tags {
   font-family: "source-code-pro";
   font-size: 16px;
   color: #fff;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: 24px; }
+  line-height: 24px;
+  font-weight: 300; }
 
 .portfolioIntro h1 {
   color: #fff;
@@ -355,6 +368,12 @@ form .button {
   cursor: pointer; }
 
 @media all and (max-width: 800px) {
+  .contactImg {
+    margin-top: 50px; }
+
+  footer .rightPortfolio {
+    text-align: left; }
+
   .portfolioLeft, .portfolioRight {
     width: 100%; }
 
@@ -436,3 +455,6 @@ form .button {
 
   .portfolioFlex .portfolioContent--left, .portfolioFlex .portfolioContent--right {
     width: 100%; } }
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333333; } }

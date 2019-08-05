@@ -5,3 +5,5 @@ function navClick() {
     hamburger.firstElementChild.classList.toggle('animate');
     menu.classList.toggle("active");
 }
+
+

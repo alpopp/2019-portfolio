@@ -4,13 +4,18 @@ layout: default
 title: Contact
 ---
 
-<div class="container sectionPadding">
-    <form action="https://getform.io/f/810d8748-f065-44c4-bdae-acadb0b40e64" method="POST">
-        <input class="formBasic" type="text" placeholder="Your name *" name="name" required>
-        <input class="formBasic" type="email" placeholder="Email *" name="email" required>
-        <textarea class="formBasic" name="msg" maxlength="140" rows="5" placeholder="Your message *" required></textarea>
-        <button class="button" type="submit">Send</button>
-    </form>
+
+<div class="container sectionPadding flex portfolioFlex">
+    
+    <div class="portfolioContent--left">
+        <form action="https://getform.io/f/810d8748-f065-44c4-bdae-acadb0b40e64" method="POST" id="contactForm">
+            <input class="formBasic" type="text" placeholder="Your name *" name="name" required>
+            <input class="formBasic" type="email" placeholder="Email *" name="email" required>
+            <textarea class="formBasic" name="msg" maxlength="140" rows="5" placeholder="Your message *" required></textarea>
+            <button class="button" id="submitForm" type="submit">Send</button>
+        </form>
+    </div>
+    <div class="portfolioContent--right">
+        <img class="contactImg" src="{{site.baseurl}}/assets/images/beach-square.jpg" alt="">
+    </div>
 </div>
-
-
