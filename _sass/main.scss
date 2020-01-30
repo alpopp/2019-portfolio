@@ -207,12 +207,6 @@ footer{
         color:white;
         text-decoration: none;
     }
-    .leftPortfolio{
-
-    }
-    .rightPortfolio{
-
-    }
 }
 .social{
 
@@ -456,8 +450,20 @@ form .button{
     cursor: pointer;
 }
 // end form
+.singleWork{
+    background: $green;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 1px 30px;
+    transition: transform 850ms 0s cubic-bezier(0.165, 0.84, 0.19, 0.95);
 
-
+    &:hover{
+        transform: scale(1.01, 1.01);
+    }
+}
+.center{
+    text-align: center;
+}
 @media all and (max-width: 800px) {
     .contactImg{
         margin-top: 50px;

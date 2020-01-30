@@ -12,3 +12,21 @@ title: Home
         </div>
     </div>
 </div>
+
+<div class="container sectionPadding">
+    <h2 class="center">Recent Work</h2>
+    <div class="recentWork">
+        {% assign pages = site.pages | where: "type", "Project" | sort: 'order' | reverse  %}
+        {% for page in pages limit:3 %}
+
+            <a href="{{site.baseurl}}{{page.url}}">
+                <div class="singleWork" style="background:#{{page.color}};">
+                    <h3>{{page.title}}</h3>
+                </div>
+            </a>
+
+        {% endfor %}
+    </div>
+</div>
+
+

@@ -158,6 +158,12 @@ form { display: flex; flex-direction: column; }
 
 form .button { display: inline-block; font-family: futura-pt, sans-serif; cursor: pointer; }
 
+.singleWork { background: #207669; border-radius: 10px; margin-bottom: 25px; padding: 1px 30px; transition: transform 850ms 0s cubic-bezier(0.165, 0.84, 0.19, 0.95); }
+
+.singleWork:hover { transform: scale(1.01, 1.01); }
+
+.center { text-align: center; }
+
 @media all and (max-width: 800px) { .contactImg { margin-top: 50px; }
   footer .rightPortfolio { text-align: left; }
   .portfolioLeft, .portfolioRight { width: 100%; }
