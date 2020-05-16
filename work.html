@@ -8,7 +8,7 @@ title: Work
 
     <div class="flex portfolio">
 
-    {% assign pages = site.pages | where: "type", "Project" %}
+    {% assign pages = site.pages | where: "type", "Project" | sort: 'order' | reverse %}
 
     {% for page in pages %}
 
